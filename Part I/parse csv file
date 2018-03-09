@@ -1,1 +1,25 @@
-kkk
+```python
+def parse_file(datafile):
+    data = [] ## create an empty list
+    with open(datafile,"rb") as f: ## with the function open(), I save it as f.
+                                   ## open(,) has 2 arguments.
+        header = f.readline().split(",") ## read the first line, 
+                                         ## split by ",", obtain a list
+                                         ## they will becomes the keys (column names, features)
+        counter = 0
+        
+        for line in f:
+            if counter == 10:
+                break
+            if counter < 10:
+                fields = line.split(",") ## split features.
+                entry = {}               ## empty dictionary
+                
+        for i, value in enumerate(fields): ## important, index for list!
+            entry[header[i].strip()] = value.strip() ## one row is processed. we match it with the header..
+        
+        data.append(entry)
+        counter = counter  + 1
+    return data
+        
+```
