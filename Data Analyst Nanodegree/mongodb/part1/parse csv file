@@ -1,5 +1,10 @@
 ```python
 def parse_file(datafile):
+    '''
+    logic 1: by line
+    logic 2: decompose line into words.
+    '''
+
     data = [] ## create an empty list
     with open(datafile,"rb") as f: ## with the function open(), I save it as f.
                                    ## open(,) has 2 arguments.
