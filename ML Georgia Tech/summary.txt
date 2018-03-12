@@ -1,0 +1,14 @@
+## input/output vector a probabilistic density function
+## mutual information? (are these vectors similar?)
+## Entropy? (does this feature have any info?)
+
+## If the information is predictable or has less uncertainty, then it has less information.
+
+## how many yes/nos == how many bits
+~~ represented as a tree!
+~~ the upper branches are those which have more information. (有针对性地问问题。)
+~~ less question == less information (variable length encoding)
+
+## one variable may contain information to infer the other.
+
+## joint entropy
