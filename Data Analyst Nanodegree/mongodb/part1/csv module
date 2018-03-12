@@ -1,0 +1,20 @@
+```python
+import os
+import ppring
+import csv
+
+datadir = ''
+datafile = 'file.csv'
+
+def parse_csv(datafile):
+    data = []
+    n    = 0  ## why?
+    with open(datafile, 'rb') as sd:
+        r = csv.DictReader(sd) ## \' \, proof..
+        for line in r:
+            data.append(line)
+    return data
+    
+
+
+```
