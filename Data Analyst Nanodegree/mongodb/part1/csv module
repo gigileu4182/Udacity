@@ -11,6 +11,7 @@ def parse_csv(datafile):
     n    = 0  ## why?
     with open(datafile, 'rb') as sd:
         r = csv.DictReader(sd) ## \' \, proof..
+                               ## clever about the the header!
         for line in r:
             data.append(line)
     return data
