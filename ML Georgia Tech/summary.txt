@@ -11,8 +11,15 @@
 
 ## one variable may contain information to infer the other.
 
-## joint entropy
+## two variables...
+~~ joint entropy, conditional entropy, mutualmutual information
+~~ mutualmutual information measures "the degree to which one variable depends up one the other.."
+  ~~ independent ... 0... no need to talk about information  (random?)
+  ~~ dependent   ... >0... some information
 
-## mutual information measures "the degree to which one variable depends up one the other.."
-~~ independent ... 0... no information (random?)
-~~ dependent   ... >0... some information
+## KL divergence -- measure of distance..
+~~ distance of two distributions..
+~~ in supervised learning, we have always some underlying distribution.
+~~ it is another least square..
+
+
