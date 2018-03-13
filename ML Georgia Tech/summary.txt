@@ -12,3 +12,7 @@
 ## one variable may contain information to infer the other.
 
 ## joint entropy
+
+## mutual information measures "the degree to which one variable depends up one the other.."
+~~ independent ... 0... no information (random?)
+~~ dependent   ... >0... some information
