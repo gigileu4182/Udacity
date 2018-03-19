@@ -1,3 +1,6 @@
+** https://www.stat.ubc.ca/~jenny/STAT545A/topic13_make-browsing-GitHub-repo-more-rewarding.html
+
+
 ### classifications learning.. 
 
 ## important notions which are embedded in every classification problem.
