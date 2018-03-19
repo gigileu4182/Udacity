@@ -1,0 +1,10 @@
+### classifications learning.. 
+
+## important notions which are embedded in every classification problem.
+~~instances
+~~concept -- funciton, which maps input to output.
+~~target
+~~hypothesis (a class, )
+~~sample (training set, (input,output))
+~~candidate (concept =?= target concept)
+~~testing set. 
