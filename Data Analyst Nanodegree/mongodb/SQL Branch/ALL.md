@@ -29,3 +29,5 @@ doing sorting and indexing are faster in sql
 
 ###### problem set 2..
 - 我忽然发现，真正SQL里面的问题都是一对多的。很少跟像计量里截面是一对一的？不可能。时间 is also involved.
+- :+1:心得：**the order, given..!!! feedback, output, diligence!!!!**
+- 
