@@ -26,3 +26,6 @@ doing sorting and indexing are faster in sql
   - and be careful, "where" happens before "group by" / "count(`*`) as sum" ( I guess for the same reason as 
   why `group by` can not be followed by `where`)
   - :+1:.. the solution is to put having num = 1, which happens after "group by"!
+
+###### problem set 2..
+- 我忽然发现，真正SQL里面的问题都是一对多的。很少跟像计量里截面是一对一的？不可能。时间 is also involved.
