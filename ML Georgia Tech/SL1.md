@@ -52,7 +52,7 @@ and an algorithm == how to build the trees
 - %% n attributes .. O(n!) for building the nodes of the tree.
 - %% output (if boolean).. another 2^n
 
-so table representation!!!: the attributes | the ouputs!
+so table representation!!!: the attributes // the ouputs!
 
 with attributes and the outputs, that is **"the function"**!
 
@@ -61,12 +61,25 @@ the total number is 2^(2^n)... so we need to trim??
 ###### id3
 - best attribute? -> information gain == gain(s,action)
   - but information gain is composed of entropy:
-    - entropy: more randomness? 
+    - entropy: more randomness? close the eyes or not.
     - amount of information to be released
     - entropy == expost - exante
 
-###### id3 bias!!
-- restriction bias!
-- preference bias! 
+###### id3 bias!! (top down. -> good split near the top.)
+- restriction bias: (the boundary of the set?)
+  - hypothesis sets I care about. e.g.
+  there are an infinite number.
+- preference bias! (the choice from the set.)
+  - given two trees, it prefers better splits near the top!!!
+  - prefer correct (model data better) ones to incorrect ones (model data worse).
+    - good splits near the top but wrong.. bad splits near the top but correct. CHOOSE THE LATTER.
+    - shorter is preferred to longer???
+- repeat the choice
+  - not for the discrete
+  - a further narrow down for the continuous.
+- When do we stop? Problem.. overfitting..
+  - can we trust data completely? **add noise.**
+    - USE CV!
+    - PRUNNING (bottom top..)
 
 
