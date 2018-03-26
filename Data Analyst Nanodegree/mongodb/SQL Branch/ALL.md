@@ -31,3 +31,28 @@ doing sorting and indexing are faster in sql
 - 我忽然发现，真正SQL里面的问题都是一对多的。很少跟像计量里截面是一对一的？不可能。时间 is also involved.
 - :+1:心得：**the order, given..!!! feedback, output, diligence!!!!**
 - 
+
+#### SQL lesson 3.
+- normaliztion (works better with join and comparisons..)
+  - rule 1: one thing with several rows.
+  - rule 2. key is the identifier, the others describe the key.
+  - rule 3. if not about the **key**, put the attribute the the other table!
+  - rule 4. do not put things together so that it seems there is a
+  relationship between them!
+- declaration of relationships
+  - references ..(another table) to maintain data integrity.
+- foreign keys.
+  - important!!!! reference to another table!
+- self joins: why? join a table to itself..
+  - allows us to find the attributes in common.
+  - avoid the relationship between self and self!!!
+- important!!! using DB-API
+  - import lib 
+  %% connect: lib.connect() 
+  %% Cursor: lib.connect().cursor
+  %% using cursor.execute() to run the query and fetch the results.
+  %% remember to close !!!!!
+  - be careful, when using select, you have to commit() or rollback()!!!
+  - subqueries.select average() from (select ... from ...) as A;
+  
+  
