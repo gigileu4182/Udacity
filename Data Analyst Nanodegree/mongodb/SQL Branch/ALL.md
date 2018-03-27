@@ -39,13 +39,17 @@ doing sorting and indexing are faster in sql
   - rule 3. if not about the **key**, put the attribute the the other table!
   - rule 4. do not put things together so that it seems there is a
   relationship between them!
+  
 - declaration of relationships
   - references ..(another table) to maintain data integrity.
+  
 - foreign keys.
   - important!!!! reference to another table!
+  
 - self joins: why? join a table to itself..
   - allows us to find the attributes in common.
   - avoid the relationship between self and self!!!
+  
 - important!!! using DB-API
   - import lib 
   %% connect: lib.connect() 
