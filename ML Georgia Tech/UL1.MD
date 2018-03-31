@@ -1,5 +1,5 @@
 
-###### UL1 
+#### UL1 
 unsupervised learning == given dataset, given function, optimization
 
 local optimum == improvement based on **local steps!**
@@ -12,6 +12,15 @@ local optimum == improvement based on **local steps!**
   - part of algorthm! (can not understand!)
   - seems easy, because global, and F function is the 5433..
 - for random starting, the range should be wide.
+
+###### simulated annealing
+
+%% exploiting or exploring?
+  %%
+  %%
+%% metropolis-hastings!
+  %% heating and cooling, simulating the idea of temperature haging?
+  %% 
 
 ###### crossover
 - locality of bits matters.
