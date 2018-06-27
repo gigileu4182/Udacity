@@ -1,35 +1,62 @@
 %% reference %%
 https://www.stat.ubc.ca/~jenny/STAT545A/topic13_make-browsing-GitHub-repo-more-rewarding.html
 
+# Instance based learning 
+- POINTS
+  - good
+    - remembers, fast, simple
+  - bad
+    - no generalization, 
+    - overfittings.. 
+      1. (believing the data too much )
+      2. some data appear too often!
+      3. I can not get which is not in the data.
+- EXAMPLE: I look at my **nearest neighbor**! but what if I have a lot of ambiguours neighbor**s**?
+  - I enlarge my neigbor region (but this comes with a **cost**!)
+  - K nearest neighbor**s**
+  - depending on where I am on the map, I may have different structures of the neighbors.
+- *KNN*,
+  - given training data, distance metric `d(q,x)`, number of neighbors
+  - return
+    - classification: (`weighted`) vote
+    - regression: (`weighted`) mean/median
+  - KNN problems
+    1. locality
+    2. smoothness
+    3. all features matter equally.
+
+
+
+
 
 # Classifications learning #
 ### Important notions which are embedded in every classification problem.
-%% instances:: (input,vector or attributes that define your input.)
+- instances:: (input,vector or attributes that define your input.)
 
-%% concept:: (funciton, maps input to output)..
+- concept:: (funciton, maps input to output)..
              (objects in the world -> members in the set)
              (what a thing is..conformable to the 'concept'? true or false)
 
-%% target concept:: **(t.c. is the actual answer.)**
+- target concept:: **(t.c. is the actual answer.)**
 
-%% hypothesis (class): **all the functions that we are willing to think about.**
+- hypothesis (class): **all the functions that we are willing to think about.**
 
-%% sample (training set, (input,output))
+- sample (training set, (input,output))
 
-%% candidate (concept):: going to be tested..
+- candidate (concept):: going to be tested..
 
-%% testing set.
-*the important lesson is .. teacher wants to make sure the students understand..
-== they want to make sure they know how to generalize, not by memorizing, but by
+- testing set.
+  - *the important lesson is .. teacher wants to make sure the students understand..
+  - == they want to make sure they know how to generalize, not by memorizing, but by
 applying the concept/the model in mind!!* 
 
 ###### example of ceteri paripas? 
-*I want to go to an occupied resterant, but not at 2:00 in the morning.*
+- *I want to go to an occupied resterant, but not at 2:00 in the morning.*
 
 ###### `<undefined>`
-a decicition tree == a specific representation \\ 
+- a decicition tree == a specific representation \\ 
 
-and an algorithm == how to build the trees
+- and an algorithm == how to build the trees
 
 #### Decision tree #### \\ order matters! \\
 - nodes: attributes
@@ -43,14 +70,14 @@ and an algorithm == how to build the trees
 4. go to 1.. until got an answer..
 
 #### D.T expressiveness ####
-%% and, or, xor,...
-- n-or == any: size of decision tree is linear. 
-- n-xor == odd/parity: O(2^N)
-- ^^ Remark:AI is about finding the best representation.
+- and, or, xor,...
+  - n-or == any: size of decision tree is linear. 
+  - n-xor == odd/parity: O(2^N)
+  - ^^ Remark:AI is about finding the best representation.
 
 ###### `<table representation>` 
-- %% n attributes .. O(n!) for building the nodes of the tree.
-- %% output (if boolean).. another 2^n
+- n attributes .. O(n!) for building the nodes of the tree.
+- output (if boolean).. another 2^n
 
 so table representation!!!: the attributes // the ouputs!
 
