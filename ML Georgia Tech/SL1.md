@@ -1,6 +1,28 @@
 %% reference %%
 https://www.stat.ubc.ca/~jenny/STAT545A/topic13_make-browsing-GitHub-repo-more-rewarding.html
 
+# SVM
+
+- which line is the best? what is best?  
+  - (if not the middle, this may not be the whole data that are actually there.)
+  - best == safest? * believe your data/sample too much == overfitting *
+  - `consistent` to the data, but I `commit the least` I can commit, 
+- example:
+  - lower bound : the line closest to the minus sign, 
+  - upper bound : ....................... plus  sign
+  - happy medium
+  - the distance between the `lb` and `ub` is the greatest
+  - hyperplane: y = w_{T}x + b.
+    - y: label
+  - decision boundary: w_{T}x + b := 0, y in {-1, +1},
+    - lb: the one touches the ...
+    - ub: the one in touch with the ...
+  - maximal length between labels -1 and +1: perpendicular to ...
+  - ** maximize the margin, subject to the constraint... **
+
+
+
+
 # Instance based learning 
 - POINTS
   - good
